@@ -132,7 +132,7 @@ class MainWindow(QWidget):
                 c = (1+r*(1-p))
                 s = a/(b-c)
             except ZeroDivisionError:
-                QMessageBox.critical(self, "Error", "Division by zero occured, change parameters")
+                QMessageBox.critical(self, "Error", "Division by zero occurred, change parameters")
             else:
                 return s
 
