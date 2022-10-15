@@ -118,6 +118,7 @@ class MainWindow(QWidget):
                 break
             if n < 0:
                 QMessageBox.critical(self, "Error", "Number of month cannot be minus")
+                break
             if r < 0.25 or r > 0.5:
                 QMessageBox.critical(self, "Error", "Interest cannot be lower than 0.25 and bigger than 0.5")
                 break
