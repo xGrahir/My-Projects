@@ -172,7 +172,7 @@ class GeneratorWindow(QWidget):
             a = int(a)
             while i < a:
                 if a < 10 or a > 20:
-                    QMessageBox.critical(self, "Error", "Length must be beetwen 10-20")
+                    QMessageBox.critical(self, "Error", "Length must be between 10-20")
                     break
                 char = random.choice(chars)
                 char = str(char)

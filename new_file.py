@@ -118,6 +118,7 @@ class MainWindow(QWidget):
                 break
             if n < 0:
                 QMessageBox.critical(self, "Error", "Number of month cannot be minus")
+                break
             if r < 0.25 or r > 0.5:
                 QMessageBox.critical(self, "Error", "Interest cannot be lower than 0.25 and bigger than 0.5")
                 break
@@ -131,7 +132,7 @@ class MainWindow(QWidget):
                 c = (1+r*(1-p))
                 s = a/(b-c)
             except ZeroDivisionError:
-                QMessageBox.critical(self, "Error", "Division by zero occured, change parameters")
+                QMessageBox.critical(self, "Error", "Division by zero occurred, change parameters")
             else:
                 return s
 
